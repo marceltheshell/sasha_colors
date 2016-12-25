@@ -1,0 +1,24 @@
+{
+  "name": "sasha_colors",
+  "description": "An app for Sasha's teacher to communicate how he's doing at school",
+  "main": "server.js",
+  "authors": [
+    "marcel.degas@gmail.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/marceltheshell/sasha_colors",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "animate.css": "^3.5.2",
+    "angular": "^1.6.1",
+    "angular-route": "^1.6.1"
+  }
+}

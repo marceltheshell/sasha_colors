@@ -1,4 +1,4 @@
-s// modules =================================================
+// modules =================================================
 var express        = require('express');
 var app            = express();
 var bodyParser     = require('body-parser');
@@ -10,7 +10,7 @@ var methodOverride = require('method-override');
 var db = require('./config/db');
 
 // set our port
-var port = process.env.PORT || 8080; 
+var port = process.env.PORT || 8000; 
 
 // connect to our mongoDB database 
 // (uncomment after you enter in your own credentials in config/db.js)

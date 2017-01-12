@@ -3,5 +3,6 @@ angular.module('sashaColorsApp', [
 	'appRoutes', 
 	'CalendarCtrl',
 	'NewReportCtrl', 
-	'SashaService'
+	'SashaService', 
+	// 'ui.bootstrap'
 ]);

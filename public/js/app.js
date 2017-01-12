@@ -4,5 +4,5 @@ angular.module('sashaColorsApp', [
 	'CalendarCtrl',
 	'NewReportCtrl', 
 	'SashaService', 
-	// 'ui.bootstrap'
+	'ui.bootstrap'
 ]);

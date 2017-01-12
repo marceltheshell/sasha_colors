@@ -1,8 +1,1 @@
-angular.module('sashaColorsApp', [
-	'ngRoute', 
-	'appRoutes', 
-	'CalendarCtrl',
-	'NewReportCtrl', 
-	'SashaService', 
-	// 'ui.bootstrap'
-]);
+var app = angular.module('sashaColorsApp', ['ngRoute', 'ui-bootstrap']);

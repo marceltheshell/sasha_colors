@@ -1,6 +1,6 @@
-angular.module('CalendarCtrl', [])
-	.controller ('CalendarCtrl', ['$scope', function($scope) {
-
-    	$scope.tagline = 'calendar controller';   
-
+app.controller('CalendarCtrl', ['$scope', function($scope){
+	$scope.tagline = 'calendar controller';   
 }]);
+
+
+   

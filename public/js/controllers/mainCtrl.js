@@ -1,6 +1,6 @@
-// angular.module('MainCtrl', [])
-// 	.controller ('MainCtrl', ['$scope', function($scope) {
+angular.module('MainCtrl', [])
+	.controller ('MainCtrl', ['$scope', function($scope) {
+		$scope.selectedTab = null; 
 
-//     	$scope.tagline = 'To the moon and back!';   
 
-// }]);
+}]);

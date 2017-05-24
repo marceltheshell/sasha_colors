@@ -1,13 +1,27 @@
-.content-container {
-	border: 1px solid red;
+body {
+	background-color: #E7E7E7;
 }
 
-.form-container {
-	border: 1px solid red; 
+.content-container {
+	height:50vh;
+	overflow: hidden;
+	padding: 0px;
+	border-radius: 6px;
+	background-color: white;
+	margin-bottom: 40px;
+	-webkit-box-shadow: 0px 2px 27px -6px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 2px 27px -6px rgba(0,0,0,0.75);
+	box-shadow: 0px 2px 27px -6px rgba(0,0,0,0.75);
 }
+
+// .flex-container {
+// 	display: flex;
+// 	align-items: center;
+// 	height:50vh;
+// }
 
 a, a:active, a:focus {
-	border-bottom: solid 2px white;
+	border-bottom: solid 2px #E7E7E7;
 	text-decoration: none;
 }
 
@@ -30,6 +44,43 @@ a:hover {
 .glyphicon-container {
 	display: flex;
 	justify-content: center;
+}
+
+.color-name, .color-circle {
+	text-align: center;
+}
+
+.color-circle {
+	border-radius: 50%;
+	margin: 0 auto;
+	width: auto;
+	height:50px;
+	width:50px;
+	background-color: black;
+}
+.color-container {
+	width: 100px;
+	width: auto;
+}
+
+.green {
+	background-color:#4ABDAC;
+}
+
+.yellow {
+	background-color:#F7B733;
+}
+
+.red {
+	background-color:#FC4A1A;
+}
+
+.other { 
+	background-color:#DFDCE3;
+}
+
+.color-content-container {
+	
 }
 
 #p-styles {

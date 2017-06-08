@@ -29,21 +29,7 @@
 		<title>Sasha Colors</title>
 	</head>
 	<body>
-		<div class="container">
-			<h1 class="text-center">Sasha Colors</h1>
-			<div class="text-center glyphicon-container">
-				<a href="/newReport" class="glyphicon-styles glyphicon glyphicon-log-in" ng-class="{'active':selectedTab === 'newReport'}" ng-click="selectedTab = 'newReport'"> 
-					<p id="p-styles">New Report</p>
-				</a>
-
-				<a href="/calendar" class="glyphicon-styles glyphicon glyphicon-calendar" ng-class="{'active':selectedTab === 'calendar'}" ng-click="selectedTab = 'calendar'"> 
-					<p id="p-styles">Calendar</p>
-				</a>
-			</div>
-		</div>
-		<div class="content-container col-md-6 col-md-offset-3" ng-view>
-			
-		</div>
+		<div ng-view></div>
 	</body>
 </html>
 

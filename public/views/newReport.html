@@ -1,34 +1,56 @@
-<div class="container col-xs-12">
-	<div class="row color-content-container" ng-if="1">
-		<div class="color-container col-sm-3">
-			<a href="">
-				<div class="color-circle green"></div>
-				<div class="color-name">Green</div>
-			</a>
-		</div>
-		<div class="color-container col-sm-3">
-			<a href="">
-				<div class="color-circle yellow"></div>
-				<div class="color-name">Yellow</div>
-			</a>
-		</div>
-		<div class="color-container col-sm-3">
-			<a href="">
-				<div class="color-circle red"></div>
-				<div class="color-name">Red</div>
-			</a>
-		</div>
-		<div class="color-container col-sm-3">
-			<a href="">
-				<div class="color-circle other"></div>
-				<div class="color-name">Other</div>
-			</a>
-		</div>
+<div class="container content-container">
+	<div class="col-sm-1 menu">
+		<a href="/newReport" class="menu-glyphicon-styles glyphicon glyphicon-log-in text-center" ng-class="{'active':selectedTab === 'newReport'}" ng-click="selectedTab = 'newReport'"> 
+			
+		</a>
+		<a href="/calendar" class="menu-glyphicon-styles glyphicon glyphicon-calendar text-center" ng-class="{'active':selectedTab === 'calendar'}" ng-click="selectedTab = 'calendar'"> 
+			
+		</a>
+		<a href="/profile" class="menu-glyphicon-styles glyphicon glyphicon-user text-center" ng-class="{'active':selectedTab === 'calendar'}" ng-click="selectedTab = 'calendar'"> 
+			
+		</a>
+		<a href="/legend" class="menu-glyphicon-styles glyphicon glyphicon-info-sign text-center" ng-class="{'active':selectedTab === 'calendar'}" ng-click="selectedTab = 'calendar'"> 
+			
+		</a>
 	</div>
-	<div class="description-container" ng-if="0">
-		<form>
-			<textarea rows="4" cols="50"></textarea>
-			<input type="submit" value="Submit">
-		</form>
+	<div class="col-sm-11 right-side-container">
+		<div>
+			<h1 ng-if="colors" class="text-center" >Sasha Colors</h1>
+		</div>
+		<div class="color-content-container" ng-if="colors">
+			<div class="col-sm-3">
+				<a class="color-anchor" ng-click="changeToForm()" href="#">
+					<div class="color-circle green"></div>
+					<p class="text-center color-name">Green</p>
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a class="color-anchor" ng-click="changeToForm()" href="#">
+					<div class="color-circle yellow"></div>
+					<p class="text-center color-name">Yellow</p>
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a class="color-anchor" ng-click="changeToForm()" href="#">
+					<div class="color-circle red"></div>
+					<p class="text-center color-name">Red</p>
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<a class="color-anchor" ng-click="changeToForm()" href="#">
+					<div class="color-circle other"></div>
+					<p class="text-center color-name">Other</p>
+				</a>
+			</div>
+		</div>
+		<div class="description-container" ng-if="form">
+			<a href="#" ng-click="changeToColors()">
+				<h1>Back to Colors</h1>
+			</a>
+			<form>
+				<textarea rows="4" cols="50"></textarea>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
 	</div>
 </div>
